@@ -121,12 +121,9 @@ async function getSongCoverBatch(albumNames) {
   );
 
   const covers = {};
-  console.log(response);
   response.data.albums.items.forEach(album => {
     covers[album.name.toLowerCase()] = album.images[0]?.url || null;
   });
-
-  console.log(covers);
 
   return covers;  // Object with album names as keys and cover URLs as values  
 }

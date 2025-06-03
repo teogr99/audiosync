@@ -6,7 +6,8 @@ interface DefaultBodyProps {
 }
 
 const Default: React.FC<DefaultBodyProps> = ({ children }) => {
-    return (<div className='default-body'>
+    return (
+    <div className='default-body'>
         {children}
     </div>
     );
